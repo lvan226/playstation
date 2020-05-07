@@ -1,16 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="css/style.min.css">
-		<title>Gulp</title>
-	</head>
-	<body>
-		@@include('_header.html')
-		<main class="main">
+<html lang="ru">
 
-		</main>
-		<script src="js/script.min.js"></script>
-	</body>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	@@include('_links.html')
+	<title>Playstation</title>
+</head>
+
+<body>
+	@@include('_header.html')
+	<main class="main">
+
+		<section class="hero" id="main" style="background-image: url(img/bg-main.jpg);">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-7">
+						<h1 class="hero__title">
+							КОНСОЛЬ НОВОГО
+							Поколения
+						</h1>
+						<p class="hero__text">
+							PlayStation4 отличается удивительно высокой игровой
+							мощностью, качеством картинки засчёт
+							нового&nbsp;оборудования,
+						</p>
+						<a class="hero__link-more" href="">Подробнее</a>
+					</div>
+					<div class="col-5">
+						<img src="img/ps-img-main.png" alt="Playstation 4">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="about" id="about">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h2 class="about__title title">О НАШЕЙ КОМПАНИИ.</h2>
+						<h3 class="about__subtitle subtitle">НЕМНОГО ИСТОРИИ</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-6">
+						<div class="about__year">1994 год</div>
+						<p class="about__text">
+							Состоялся релиз консоли PS1 - игровая приставка пятого поколения,
+							разработанная компанией Sony Computer Entertainment
+							под&nbsp;руководством Кэна Кутараги.
+						</p>
+						<div class="about__year">2000 год</div>
+						<p class="about__text">
+							Продажа консоли в Японии началась 4 марта 2000 г. PS2 - вторая
+							игровая приставка, выпущенная компанией Sony, наследница
+							PlayStation&nbsp;и предшественница PlayStation 3.
+						</p>
+						<a class="about__more-link" href="#">ПОДРОБНЕЕ</a>
+					</div>
+					<div class="col-6">
+						<img class="about__video-image" src="img/about-video.png" alt="">
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</main>
+	<script src="js/script.min.js"></script>
+</body>
+
 </html>

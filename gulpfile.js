@@ -71,7 +71,9 @@ function html() {
 
 function css() {
 	var firstPath = src([
+		"node_modules/normalize.css/normalize.css",
 		"node_modules/slick-carousel/slick/slick.css",
+		"node_modules/bootstrap/dist/css/bootstrap-grid.min.css",
 	])
 	.pipe(concat("libs.min.css"))
 	.pipe(clean_css())
