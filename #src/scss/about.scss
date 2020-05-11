@@ -11,7 +11,7 @@
 	// .about__subtitle
 
 	&__subtitle {
-		margin-bottom: 35px;
+		@include subtitle-mb;
 	}
 
 	// .about__year
@@ -78,20 +78,6 @@
 .row {
 }
 .col-12 {
-}
-.title {
-	padding-bottom: 10px;
-
-	font-size: 24px;
-	font-weight: 700;
-	text-align: center;
-}
-.subtitle {
-	color: #595959;
-	font-size: 14px;
-	font-weight: 400;
-	text-transform: uppercase;
-	text-align: center;
 }
 .col-6 {
 }

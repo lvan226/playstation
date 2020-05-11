@@ -7,3 +7,7 @@
 		font-style: #{$style};
 	}
 }
+
+@mixin subtitle-mb {
+	margin-bottom: 35px;
+}

@@ -1,0 +1,102 @@
+.subscription {
+	position: relative;
+
+	padding: 120px 0;
+
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+
+		background-color: #fff;
+		opacity: 0.2;
+	}
+	// .subscription__inner
+
+	&__inner {
+		position: relative;
+		z-index: 2;
+	}
+
+	// .subscription__title
+
+	&__title {
+	}
+
+	// .subscription__subtitle
+
+	&__subtitle {
+		@include subtitle-mb;
+	}
+
+	// .subscription__form-box
+
+	&__form-box {
+		position: relative;
+
+		display: flex;
+
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+
+		background-color: #fff;
+		border: none;
+		box-shadow: 0 0 18px rgba(0, 0, 0, 0.35);
+		border-radius: 25px;
+	}
+
+	// .subscription__form-input
+
+	&__form-input {
+		width: 100%;
+		padding: 18px 32px;
+
+		font-size: 16px;
+		text-transform: uppercase;
+		border: none;
+		outline: none;
+
+		background-color: transparent;
+	}
+
+	// .subscription__form-btn
+
+	&__form-btn {
+		// position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+
+		padding: 0 60px;
+
+		color: #f9f9f9;
+		font-size: 14px;
+		text-transform: uppercase;
+
+		background-color: #5194ff;
+		border: none;
+		border-radius: 25px;
+		cursor: pointer;
+
+		transition: 0.35s;
+		&:hover {
+			background-color: darken(#5194ff, 5%);
+		}
+	}
+}
+.container {
+}
+.row {
+}
+.col-12 {
+}
+.title {
+}
